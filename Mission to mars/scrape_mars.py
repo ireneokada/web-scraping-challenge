@@ -31,14 +31,15 @@ def scrape():
     news_title = news_soup.find("div", class_="content_title").text
     news_paragraph = news_soup.find("div", class_="article_teaser_body").text
 
-# JPL Mars Space Images -visit Featured Image find elements and define path. ref: https://www.w3schools.com/python/ref_string_rstrip.asp
+# JPL Mars Space Images -visit Featured Image find elements and define path. 
+# ref: https://www.w3schools.com/python/ref_string_rstrip.asp;
     jurl = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
     browser.visit(jurl)
     time.sleep(1)
     jhtml = browser.html
     jpl_soup = bs(jhtml,"html.parser")
     image_url = jpl_soup.find('div',class_='carousel_container').article.footer.a['data-fancybox-href']
-    image_link = "https:"+jpl_soup.find('div', class_='jpl_logo').a['href'].rstrip('/')
+    image_link = "https:"+jpl_soup.find('div', class_='jpl_logo').a['href'].rstrip()
     feature_url = image_link+image_url
     featured_image_title = jpl_soup.find('h1', class_="media_feature_title").text.strip()
    
