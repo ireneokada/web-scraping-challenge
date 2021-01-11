@@ -22,7 +22,7 @@ Challenges: other than syntax and coding errors I had issues populating the webp
 
 Finally, I understood the purpose of the .sleep() function, ( a eureka moment) which served to time the rendering of images to the execution of the index file. I added this function to each browser visit so the when the web page rendered it was fully executed.
 
-Primary references for this homework included lessons through the program on (mongo) database creation, w3 schools (referenced within the code), help from tutor on the concept of creating a dictionary for the hemispheres, other references as documented.
+Primary references for this homework included lessons through the program on (mongo) database creation, lessons on webscraping (weather scrape/scrape costa in particular, w3 schools (referenced within the code), help from tutor on the concept of creating a dictionary for the hemispheres, other references as documented.
 
 
 
