@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mission to Mars</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
     <div class="container-fluid news no-padding" id="scraped-data">
       <div class="row no-gutter">
         <div class="card-body">
-          <h5 class="card-title" id="font">Latest Mars News</h5>
+          <h4 class="card-title" id="font">Latest Mars News:</h4>
           <h6 class="card-subtitle mb-2 " id="font">{{ mars.news_title }}</h6>
           <p class="card-text">{{ mars.paragraph }}</p>
         </div>
@@ -30,25 +31,25 @@
         <div class="col-md-6" >
           <div class="card">
             <div class="card-body" id="img-table">
-              <h5 class="card-title">Featured Mars Image</h5 style=font-size:300px>
+              <h3 class="text-uppercase">Featured Image</h3 style=font-size:100px>
               <p class="card-text" id="dark-font">{{ mars.featured_image_title }}</p>
-              <img class="card-img-bottom" src="{{ mars.featured_image }}" width="640" alt="Featured Image">
+              <img class="card-img-bottom" src="{{ mars.featured_image }}" width="340" alt="Featured Image">
               <!--a holding space for table spacing    -----</a-->
             </div>
           </div>
         </div>
-        <div class="col-md-6" >
+        <div class="col-md-4" >
           <div class="card">
             <div class="card-body" id="img-table">
-              <div class="col-md-12">
-                <h5 class="card-title">Mars Fact Table</h5>
+              <div class="col-md-6">
+                <h3 class="card-title">Mars Fact Table</h3>
                 <p class="card-text" id="bold-black-font"></p>
               </div>
             </div>
             <div class="card-body" id="img-table">
-              <div class="col-md-12">
+              <div class="col-md-8">
                 <div>
-                  <h5 class="card-title">Mars Facts</h5>
+                  <h5 class="card-title"class="text-bold"></class>Mars Facts</h5>
                   <p class="card-text"id="dark-font" >{{ mars.fact_table |  safe }} </p>
                 </div>
               </div>
@@ -59,9 +60,9 @@
     </div>
   </div>
   
-  <div class ="row" id="mars-hemispheres">
-    <div class = "col-md-12">
-        <h3><center>Mars Hemispheres</center></h3>
+  <div class ="row-right" id="mars-hemispheres">
+    <div class = "col-md-6">
+        <h3><center><class="text-uppercase">Mars Hemispheres</center></h3>
         {% for hemisphere in mars.hemisphere_image_urls %}
             <div class = "col-md-6">
                 <div class = "thumbnail">
@@ -69,6 +70,8 @@
                         <h3>{{hemisphere.title}}</h3>
                     </div>
                 </div>
+                
+  
         {% endfor %}
             </div>
     

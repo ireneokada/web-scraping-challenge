@@ -79,6 +79,7 @@ def scrape():
 # Mars Hemispheres. Tutor help plus ref scrape costa lesson for relative image path etc
 #ref:https://stackoverflow.com/questions/36107353/python-beautifulsoup-get-all-href-in-children-of-div
 #visit url, initiate dictionary for hemi's, define pathway, iterate through list of hemis and add to dictionary
+#https://www.w3schools.com/tags/tag_a.asp
     mhemiurl = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
     browser.visit(mhemiurl)  
     time.sleep(1)

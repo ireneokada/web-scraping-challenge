@@ -20,9 +20,11 @@ Using mongo db and a flask application in app.py a scrape function was called, p
 
 Challenges: other than syntax and coding errors I had issues populating the webpage in a timely fashion. This resulted in the addition of a button feature that activated the scrape function (and which I left for the purpose of updating the page) but which did not consistently resolve the issue.
 
-Finally, I understood the purpose of the .sleep() function, ( a eureka moment) which served to time the rendering of images to the execution of the index file. I added this function to each browser visit so the when the web page rendered it was fully executed.
+Additional realizations that were valuable to me:
+- the purpose of the .sleep() function, ( a eureka moment) which served to time the rendering of images to the execution of the index file. I added this function to each browser visit so the when the web page rendered it was fully executed.
+-the html hyperlink pathway nomenclature: that <a> element is the href attribute, which indicates the link's destination
 
-Primary references for this homework included lessons through the program on (mongo) database creation, lessons on webscraping (weather scrape/scrape costa in particular, w3 schools (referenced within the code), help from tutor on the concept of creating a dictionary for the hemispheres, other references as documented.
+Primary references for this homework included lessons through the program on (mongo) database creation, lessons on webscraping (weather scrape/scrape costa in particular, w3 schools (referenced within the code), help from tutor on the concept of creating a dictionary for the hemispheres and documenting the pathways, other references as documented.
 
 
 
@@ -32,3 +34,5 @@ Additional references:
 #https://stackoverflow.com/questions/53604168/how-to-extract-a-part-of-url-from-dictionary-value-in-python
 
 https://stackoverflow.com/questions/9198334/how-to-build-up-a-html-table-with-a-simple-for-loop-in-jinja2
+ https://www.w3schools.com/tags/tag_a.asp   
+    
